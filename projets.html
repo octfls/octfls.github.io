@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projects | Octave Faliès--Lagarrigue Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    
+    <!-- SCRIPT GOOGLE POUR LA 3D -->
+    <script type="module" src="https://ajax.googleapis.com/ajax/libs/model-viewer/3.4.0/model-viewer.min.js"></script>
+</head>
+<body>
+
+    <!-- SIDEBAR NAVIGATION -->
+    <nav class="sidebar">
+        <div class="sidebar-header">
+            <span class="logo">Octave F.</span>
+        </div>
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="projets.html" class="active">Projects</a></li>
+            <li><a href="experiences.html">Experiences</a></li>
+            <li><a href="associatif.html">Extracurricular</a></li>
+        </ul>
+        <div class="sidebar-footer">
+            <a href="CV_Octave.pdf" class="btn secondary" download>Resume (PDF)</a>
+        </div>
+    </nav>
+
+    <!-- MAIN CONTENT -->
+    <main class="content">
+        
+        <section class="projects-section">
+            <h1>Engineering Projects</h1>
+            <p class="subtitle">Showcasing my technical work in mechanical design and system optimization.</p>
+            
+            <!-- PROJECT 1 : FORMULA STUDENT - DIRECTION -->
+            <div class="timeline-item" style="margin-top: 3rem;">
+                <h3>Steering System - Mechanical Design</h3>
+                <p class="date">2025 - Present | EPSA Formula Student</p>
+                
+                <div class="tags-container" style="margin-bottom: 1.5rem;">
+                    <span class="tag">CATIA V5</span>
+                    <span class="tag">CAD / CAM</span>
+                </div>
+
+                <p class="description">
+                    As part of the mechanical development team, I am involved in the design and dynamic optimization of a single-seater race car. This section highlights the steering assembly, focusing on precision and weight reduction.
+                </p>
+
+                <!-- INTÉGRATION 3D : DIRECTION -->
+                <div style="background-color: #ffffff; border-radius: 12px; padding: 10px; margin-top: 2rem; box-shadow: 0 4px 15px rgba(0,0,0,0.05);">
+                    <p style="text-align: center; font-size: 0.9rem; color: var(--text-secondary); margin-bottom: 10px;">
+                        <em>Interact with the 3D model</em>
+                    </p>
+                    <model-viewer 
+                        src="assemblage_direction_final.glb" 
+                        orientation="90deg -85deg -60deg" 
+                        camera-controls 
+                        auto-rotate 
+                        shadow-intensity="1"
+                        style="width: 100%; height: 400px; outline: none; background-color: #f5f5f7; border-radius: 8px;">
+                    </model-viewer>
+                </div>
+            </div>
+
+            <!-- PROJECT 2 : SUSPENSION & KINEMATICS -->
+            <div class="timeline-item" style="margin-top: 3rem;">
+                <h3>Suspension Kinematics</h3>
+                <p class="date">2025 - Present | EPSA Formula Student</p>
+                
+                <div class="tags-container" style="margin-bottom: 1.5rem;">
+                    <span class="tag">OptimumKinematics</span>
+                    <span class="tag">MATLAB</span>
+                    <span class="tag">Vehicle Dynamics</span>
+                </div>
+
+                <p class="description">
+                    Spearheaded the design and development of the complete suspension system. Conducted extensive kinematic simulations using OptimumKinematics to define critical targets, including Ackermann geometry, kingpin inclination, caster, dynamic toe, camber gain in heave...
+                </p>
+                
+                <p class="description">
+                    To ensure accurate vehicle dynamics, I utilized Tire Test Consortium (TTC) data processed via a MATLAB add-on to build a tire models. This data-driven approach allowed for precise force calculations across various slip angles and vertical loads.
+                </p>
+
+                <!-- GALERIE IMAGES : OPTIMUM K & GRAPHIQUES PNEUS -->
+                <div style="display: flex; flex-wrap: wrap; gap: 10px; margin-top: 1rem; margin-bottom: 2rem; justify-content: space-between;">
+                    <img src="optimumK_accueil.png" alt="OptimumKinematics Interface" style="width: 100%; max-width: 48%; border-radius: 8px; border: 1px solid #eaeaea; object-fit: cover;">
+                    <img src="highfz.png" alt="Tire Model Data High FZ" style="width: 100%; max-width: 48%; border-radius: 8px; border: 1px solid #eaeaea; object-fit: cover;">
+                </div>
+
+                <!-- INTÉGRATION 3D : SUSPENSION COMPLETE -->
+                <div style="background-color: #ffffff; border-radius: 12px; padding: 15px; margin-top: 2rem; box-shadow: 0 4px 15px rgba(0,0,0,0.05);">
+                    <p style="text-align: center; font-size: 0.95rem; font-weight: 600; color: var(--text-primary); margin-bottom: 5px;">Suspension Geometry</p>
+                    <p style="text-align: center; font-size: 0.85rem; color: var(--text-secondary); margin-bottom: 15px;">Full assembly with chassis integration</p>
+                    <model-viewer 
+                        src="suspat_chassis.glb" 
+                        orientation="0deg 0deg 0deg" 
+                        camera-controls 
+                        auto-rotate 
+                        shadow-intensity="1"
+                        style="width: 100%; height: 400px; outline: none; background-color: #f5f5f7; border-radius: 8px; margin-bottom: 20px;">
+                    </model-viewer>
+
+                    <p style="text-align: center; font-size: 0.85rem; color: var(--text-secondary); margin-bottom: 15px; margin-top: 10px;">Isolated suspension linkages</p>
+                    <model-viewer 
+                        src="suspat_sans_chassis_sans-chapes.glb" 
+                        orientation="0deg 0deg 0deg" 
+                        camera-controls 
+                        auto-rotate 
+                        shadow-intensity="1"
+                        style="width: 100%; height: 400px; outline: none; background-color: #f5f5f7; border-radius: 8px;">
+                    </model-viewer>
+                </div>
+            </div>
+
+            <!-- PROJECT 3 : FRONT UPRIGHT & PACKAGING -->
+            <div class="timeline-item" style="margin-top: 3rem;">
+                <h3>Front Upright Design & Packaging</h3>
+                <p class="date">2025 - Present | EPSA Formula Student</p>
+                
+                <div class="tags-container" style="margin-bottom: 1.5rem;">
+                    <span class="tag">CATIA V5</span>
+                    <span class="tag">Packaging</span>
+                    <span class="tag">Mechanical Design</span>
+                </div>
+
+                <p class="description">
+                    Beyond kinematics, I managed the global packaging of the front end. This led to the detailed CAD design and structural optimization of the front upright assembly.
+                </p>
+
+                <!-- GALERIE MIXTE : IMAGE ÉCLATÉE + 3D UPRIGHT -->
+                <div style="display: flex; flex-wrap: wrap; gap: 2%; margin-top: 2rem; align-items: stretch;">
+                    
+                    <!-- IMAGE ÉCLATÉE À GAUCHE -->
+                    <div style="width: 49%; display: flex; flex-direction: column;">
+                        <img src="vue_eclatee.jpg" alt="Front Upright Assembly CAD" style="width: 100%; height: 100%; min-height: 350px; border-radius: 12px; border: 1px solid #eaeaea; object-fit: cover; box-shadow: 0 4px 15px rgba(0,0,0,0.05);">
+                    </div>
+
+                    <!-- MODÈLE 3D À DROITE -->
+                    <div style="width: 49%; background-color: #ffffff; border-radius: 12px; padding: 10px; box-shadow: 0 4px 15px rgba(0,0,0,0.05); display: flex; flex-direction: column;">
+                        <model-viewer 
+                            src="front_upright_assy_v1.glb" 
+                            orientation="0deg 0deg -90deg" 
+                            camera-controls 
+                            auto-rotate 
+                            shadow-intensity="1"
+                            style="width: 100%; height: 100%; min-height: 330px; outline: none; background-color: #f5f5f7; border-radius: 8px;">
+                        </model-viewer>
+                    </div>
+                    
+                </div>
+            </div>
+
+            <!-- PROJECT 4 : PCM & THERMAL MODELING -->
+            <div class="timeline-item" style="margin-top: 3rem;">
+                <h3>Phase Change Material (PCM) Synthesis & Thermal Modeling</h3>
+                <p class="date">2024</p>
+                
+                <div class="tags-container" style="margin-bottom: 1.5rem;">
+                    <span class="tag">Thermodynamics</span>
+                    <span class="tag">Python</span>
+                    <span class="tag">Hardware Integration</span>
+                    <span class="tag">Data Acquisition</span>
+                </div>
+
+                <p class="description">
+                    To address ecological challenges and reduce building energy consumption, I designed a thermal regulation system utilizing Phase Change Materials (PCM). I synthesized an eutectic mixture of Lauric and Capric acids, selecting it for its high latent heat capacity of 105 kJ/kg.
+                </p>
+                
+                <p class="description">
+                    I constructed a custom, calorifugated experimental setup to characterize the material's thermal properties. The environment was fully automated using an Arduino and a relay module to precisely control the heating element, while continuously recording temperature data.
+                </p>
+
+                <p class="description">
+                    In parallel, I developed a 1D numerical heat transfer model from scratch in Python. The model simulated the integration of a PCM layer inside a standard wall structure.
+                </p>
+
+                <!-- GALERIE IMAGES : HARDWARE + SOFTWARE -->
+                <div style="display: flex; flex-wrap: wrap; gap: 2%; margin-top: 2rem;">
+                    <img src="arduino.jpg" alt="Experimental setup with Arduino" style="width: 49%; border-radius: 8px; border: 1px solid #eaeaea; object-fit: cover; box-shadow: 0 4px 15px rgba(0,0,0,0.05);">
+                    <img src="python_mcp.png" alt="Python 1D numerical model" style="width: 49%; border-radius: 8px; border: 1px solid #eaeaea; object-fit: cover; box-shadow: 0 4px 15px rgba(0,0,0,0.05);">
+                </div>
+                
+            </div>
+
+        </section>
+
+    </main>
+
+    <!-- ============================================== -->
+    <!-- FENÊTRE MODALE POUR L'AGRANDISSEMENT D'IMAGES  -->
+    <!-- ============================================== -->
+    <div id="imageModal" class="modal">
+        <span class="close-modal">&times;</span>
+        <img class="modal-content" id="modalImg">
+    </div>
+
+    <!-- SCRIPT JAVASCRIPT POUR LE FONCTIONNEMENT -->
+    <script>
+        // Récupération de la modale et de l'image
+        var modal = document.getElementById("imageModal");
+        var modalImg = document.getElementById("modalImg");
+        var span = document.getElementsByClassName("close-modal")[0];
+
+        // Sélectionne toutes les images de la zone de contenu
+        var images = document.querySelectorAll(".content img");
+
+        // Ajoute l'événement de clic sur chaque image
+        images.forEach(function(img) {
+            img.onclick = function() {
+                modal.style.display = "flex"; // Affiche la modale
+                modalImg.src = this.src;      // Injecte la source de l'image cliquée
+            }
+        });
+
+        // Ferme la modale quand on clique sur la croix
+        span.onclick = function() {
+            modal.style.display = "none";
+        }
+
+        // Ferme la modale quand on clique n'importe où dans le fond noir
+        window.onclick = function(event) {
+            if (event.target == modal) {
+                modal.style.display = "none";
+            }
+        }
+    </script>
+
+</body>
+</html>
