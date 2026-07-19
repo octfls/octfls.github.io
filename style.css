@@ -303,3 +303,55 @@ h2 {
     transform: scale(1.02);
     box-shadow: 0 8px 25px rgba(0,0,0,0.1) !important;
 }
+
+/* ========================================= */
+/* ADAPTATION MOBILE (RESPONSIVE)            */
+/* ========================================= */
+
+@media screen and (max-width: 768px) {
+    body {
+        flex-direction: column;
+    }
+
+    .sidebar {
+        width: 100%;
+        height: auto;
+        position: relative;
+        padding: 1.5rem 1rem;
+        display: flex;
+        flex-direction: column; /* Empile le logo au-dessus des liens */
+        align-items: center;    /* Centre tout horizontalement */
+        gap: 15px;              /* Espace entre le logo et le menu */
+        border-right: none;
+        border-bottom: 1px solid #eaeaea; /* Petite ligne de séparation en bas */
+    }
+
+    .sidebar-header {
+        margin-bottom: 0; /* Enlève la marge de la version bureau */
+        text-align: center;
+    }
+
+    .nav-links {
+        display: flex;
+        flex-direction: row; /* Force les liens à se mettre en ligne */
+        justify-content: center;
+        flex-wrap: wrap;     /* Permet de passer à la ligne sur de très petits écrans */
+        gap: 15px;
+        padding: 0;          /* Enlève les marges par défaut de la liste */
+        margin: 0;
+        width: 100%;
+    }
+
+    .nav-links li {
+        margin: 0; /* Nettoie les marges individuelles */
+    }
+
+    .sidebar-footer {
+        display: none; /* Cache le bouton CV sur mobile */
+    }
+
+    .content {
+        margin-left: 0;
+        padding: 1.5rem 1rem;
+    }
+}
